@@ -1,1 +1,1 @@
-Readme for this project
+Readme for 0x02-shell_redirections
