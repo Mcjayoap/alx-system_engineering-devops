@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#loops from 1 to 10 and implements conditional statements
+
+
+count=1
+while ((count <= 20)); do
+	if [ $count == 4 ]; then
+		echo -e "4\nbad luck from China"
+	elif [ $count == 9 ]; then
+		echo -e "9\nbad luck from Japan"
+	elif [ $count == 17 ]; then
+		echo -e "17\nbad luck from Italy"
+	else
+		echo $count
+	fi
+	count=$((count + 1))
+
+done
