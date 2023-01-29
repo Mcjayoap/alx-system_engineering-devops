@@ -20,7 +20,7 @@ do
       echo "Bad luck from Italy"
       ;;
     *)
-      echo "$i"
+      echo $i
       ;;
   esac
   i=$((i+1))
