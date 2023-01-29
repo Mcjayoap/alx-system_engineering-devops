@@ -2,7 +2,7 @@
 #displays Best School 10 times using while loop
 
 
-count = 1
+count=1
 while ((count <= 10)); do
 	echo "Best School"
 	count=$((count + 1))
