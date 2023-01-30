@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#displays numbers from 1 to 100.
+
 
 # Loop from 1 to 100
 for i in {1..100}; do
