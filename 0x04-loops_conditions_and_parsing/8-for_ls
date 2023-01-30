@@ -3,8 +3,11 @@
 #In a list format
 #only part of the name after the first dash is displayed
 
-for file in $(ls | grep -v "^\."); do
-  name=${file#*-}
-  echo $name
+
+list=$(ls)
+for file in $list; do
+  filename=$(echo "$file" | cut -d'-' -f2-)
+  echo "$filename"
 done
+
 
