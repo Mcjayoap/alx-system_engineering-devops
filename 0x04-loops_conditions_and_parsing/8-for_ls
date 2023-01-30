@@ -4,10 +4,11 @@
 #only part of the name after the first dash is displayed
 
 
-list=$(ls)
-for file in $list; do
-  filename=$(echo "$file" | cut -d'-' -f2-)
-  echo "$filename"
+for file in *; do
+   if [[ "$file" =~ ^\. ]]; then
+      continue
+   fi
+   echo "${file##*-}"
 done
 
 
