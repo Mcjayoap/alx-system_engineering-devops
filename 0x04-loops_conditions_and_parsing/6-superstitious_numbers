@@ -5,23 +5,18 @@
 i=1
 
 while ((i <= 20)); do
+  echo "$i"
   case $i in
     4)
-      echo "4"
       echo "Bad luck from China"
       ;;
     9)
-      echo "9"
       echo "Bad luck from Japan"
       ;;
     17)
-      echo "17"
       echo "Bad luck from Italy"
       ;;
-    *)
-      echo $i
-      ;;
   esac
-  i=$((i+1))
+  (( i++ ))
 done
 
