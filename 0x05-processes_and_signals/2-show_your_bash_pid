@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2009
+# Display the PID of the bash process
+
+
+echo "Bash Process PID:"
+ps -e -o pid,command | grep bash | awk '{print $1}'
+

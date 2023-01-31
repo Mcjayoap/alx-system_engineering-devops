@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Display PID and process name of processes containing "bash"
+
+
+echo "Processes containing 'bash':"
+for pid in $(pgrep bash); do
+  cmdline=$(cat "/proc/$pid/cmdline")
+  echo "PID: $pid, Process Name: $cmdline"
+done
+
